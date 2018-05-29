@@ -72,7 +72,7 @@ class Player:
                 #print (characteristicsDictionary [i][1])
                 #self.characteristics [i] = int (input ("Enter with your " + characteristicsDictionary [i][0] + " number: "))
 
-        #tratamento para skill primaria igual a secundaria
+        #check if secundary skill == primary skill
         while self.characteristics [-1] == self.characteristics [-2]:
             print ("\n\tWarning!")
             print ("Secondary skill must be different from primary!")
@@ -112,4 +112,3 @@ def startQuiz (classes, classesCharacteristics):
 
 printTittle ()
 startQuiz (classes, classesCharacteristics)
-input ("\nPress enter to exit")
