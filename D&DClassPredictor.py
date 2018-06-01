@@ -18,14 +18,14 @@ classes = ["Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk", "Paladin",
 #attack     ->  0 = melee
 #               1 = ranged
 #               2 = both
-#strongestSkill
+#primarySkill
 #           ->  0 = strength
 #               1 = dexterity
 #               2 = intelligence
 #               3 = wisdom
 #               4 = charisma
 #               5 = constitution
-#weakestSkill
+#secondarySkill
 #           -> same as above
 
 characteristicsDictionary = [
@@ -76,7 +76,7 @@ class Player:
         while self.characteristics [-1] == self.characteristics [-2]:
             print ("\n\tWarning!")
             print ("Secondary skill must be different from primary!")
-            print ("Your primary skill number is " + str (self.characteristics [-2]))
+            print ("Your primary skill number is ", self.characteristics [-2])
             print ("\n" + characteristicsDictionary [-1][0] + ":")
             print (characteristicsDictionary [-1][1])
             self.characteristics [-1] = int (input ("Enter with your " + characteristicsDictionary [-1][0] + " number: "))
