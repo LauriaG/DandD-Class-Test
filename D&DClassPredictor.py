@@ -2,7 +2,7 @@
 """
 Created on Tue May  29 02:34:47 2018
 
-@author: Gabriel Lauria
+@author: Lauria
 """
 
 from sklearn import tree
